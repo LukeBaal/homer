@@ -113,3 +113,17 @@ For Prometheus you need to set the type to Prometheus and provide a url.
   url: "http://192.168.0.151/"
   # subtitle: "Monitor data server"
 ```
+
+## Portainer
+
+For Portainer you need to set the type to Portainer and provide a url, username, and password.
+
+```yaml
+- name: "Portainer"
+  type: Portainer
+  logo: "assets/tools/sample.png"
+  url: "http://192.168.0.151/"
+  # subtitle: "Container Manager" # optional, if no subtitle is defined, Running/Stopper Container counts will be shown
+  username: "admin"
+  password: "password"
+```

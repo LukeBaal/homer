@@ -188,6 +188,7 @@ Currently the following services are supported for showing quick infos on the ca
 - AdGuardHome
 - PaperlessNG
 - Mealie
+- Portainer
 
 ## Additional configuration
 
@@ -198,3 +199,7 @@ For Paperless you need an API-Key which you have to store at the item in the fie
 ### Mealie
 
 First off make sure to remove an existing `subtitle` as it will take precedence if set. Setting `type: "Mealie"` will then show the number of recipes Mealie is keeping organized or the planned meal for today if one is planned. You will have to set an API key in the field `apikey` which can be created in your Mealie installation.
+
+### Portainer
+
+In order to show the running and stopped container counts, a username and password is required. One option is to create a non-admin user and assign them as a standard user to the environments you want stats for. This limits the user's access, while still providing the needed stats.
